@@ -10,19 +10,22 @@
     <header>
         <h1>Debugging Activity</h1>
     </header>
+
     <nav>
-        <ul style="color: brown;">
+        <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</li>
+            <li><a href="#">About</a></li> <!-- Fixed: Closed anchor tag properly -->
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
-        </ul>
+        </ul> <!-- Fixed: Properly closed ul tag -->
     </nav>
+
     <main>
         <section>
-            <h2>About Us
+            <h2>About Us</h2> <!-- Fixed: Added missing closing h2 tag -->
             <p>Welcome to our website. We provide top-notch services in various fields.</p>
         </section>
+
         <section>
             <h2>Our Services</h2>
             <ul>
@@ -31,18 +34,24 @@
                 <li>Digital Marketing</li>
             </ul>
         </section>
+
         <section>
             <h2>Contact Us</h2>
             <form action="submit.php" method="post">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <!-- Fixed: Added placeholder -->
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email">
+
                 <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message here"></textarea>
+
                 <button type="submit">Send</button>
-            
+            </form> <!-- Fixed: Closed form tag -->
         </section>
     </main>
+
     <footer>
         <p>&copy; 2024 Debugging Activity</p>
     </footer>
